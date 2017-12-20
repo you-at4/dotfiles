@@ -19,7 +19,7 @@ SAVEHIST=1000000
 
 ### Title (user@hostname) ###
 case "${TERM}" in
-kterm*|xterm*|)
+(kterm*|xterm*|)
   precmd() {
     echo -ne "\033]0;${USER}@${HOST%%.*}\007"
   }
